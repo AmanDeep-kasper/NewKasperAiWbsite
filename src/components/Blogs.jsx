@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Blogs.css"
-
+import Blog1 from "../assets/images2/Blog1.svg"
+import Blog2 from "../assets/images2/Blog2.svg"
+import Blog3 from "../assets/images2/Blog3.svg"
+import Blog4 from "../assets/images2/Blog4.svg"
  import { useState ,useRef,useEffect} from 'react';
 const Blogs = () => {
 
@@ -10,7 +13,7 @@ const Blogs = () => {
     const dummyBlogs = [
       {
         id: 1,
-        image: "./Blog4.svg",
+        image:Blog1,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -18,7 +21,7 @@ const Blogs = () => {
       },
       {
         id: 2,
-        image: "./Blog2.svg",
+        image:Blog2,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -26,7 +29,7 @@ const Blogs = () => {
       },
       {
         id: 3,
-        image: "./Blog3.svg",
+        image:Blog3,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -34,7 +37,7 @@ const Blogs = () => {
       },
       {
         id: 4,
-        image: "./Blog4.svg",
+        image:Blog4,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -42,7 +45,7 @@ const Blogs = () => {
       },
       {
         id: 5,
-        image: "./Blog4.svg",
+        image:Blog1,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -50,7 +53,7 @@ const Blogs = () => {
       },
       {
         id: 6,
-        image: "./Blog4.svg",
+        image:Blog4,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -58,7 +61,7 @@ const Blogs = () => {
       },
       {
         id: 7,
-        image: "./Blog4.svg",
+        image:Blog4,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -66,7 +69,7 @@ const Blogs = () => {
       },
       {
         id: 8,
-        image:"./Blog4.svg",
+        image:Blog3,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -74,7 +77,7 @@ const Blogs = () => {
       },
       {
         id: 9,
-        image: "./Blog4.svg",
+        image:Blog2,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",
@@ -82,7 +85,7 @@ const Blogs = () => {
       },
       {
         id: 10,
-        image: "./Blog4.svg",
+        image:Blog1,
         tag: "HRMS",
         title: "Building Scalable Business Solutions Through Mobile App Development",
         date: "Feb 9, 2025",

@@ -1,6 +1,8 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import "./background-beams-with-collision-demo.css"
+import "./background-beams-with-collision-demo.css";
+import google from "../assets/images2/google.png";
+import Badgeimg from "../assets/images2/Badgeimg.jpg"
 export default function BackgroundBeamsWithCollisionDemo() {
   const openGoogleReviews = () => {
   window.open(
@@ -54,7 +56,7 @@ export default function BackgroundBeamsWithCollisionDemo() {
         <span className="font-bold text-gray-800">4.3</span>
         <span onClick={openGoogleReviews}
  className="text-blue-600 cursor-pointer text-sm ">(23 Google reviews)</span>
-         <img src="./google.png" alt="G" className="w-5 h-5" />
+         <img src={google} alt="G" className="w-5 h-5" />
       </div>
     </div>
   </div>
@@ -64,7 +66,7 @@ export default function BackgroundBeamsWithCollisionDemo() {
   <div className="relative flex-1 ml-20 lg:ml-30 mt-5">
     <div className="w-[1200px] h-[600px]">
         <img 
-            src="./Badgeimg.jpg" 
+            src={Badgeimg}
             alt="Dashboard" 
            
             className="w-full h-auto drop-shadow-2xl object-cover diamond-half-clip z-0 rounded-3xl" 
