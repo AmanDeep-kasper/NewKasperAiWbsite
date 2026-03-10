@@ -1,0 +1,139 @@
+
+.group:hover .group-hover\:block {
+    display: block;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-demo {
+    background-color: #FA4028;
+}
+
+.btn-mun {
+    background-color: #0c8ce9
+}
+
+@media (max-width: 768px) {
+    .nav-links-mobile {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+    }
+} 
+
+
+
+
+  
+.menu {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 76px;    
+  height: 32px;
+  color: #00063D;
+  font-family: "Sora", sans-serif;
+
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration: none;
+  white-space: nowrap; 
+}
+
+
+.menu-div {
+  display: flex;
+  align-items: center;
+   font-family: Sora;
+  gap: 30px; 
+  width: auto; 
+}
+
+/* --- Base logic for the Mobile Menu Links --- */
+@media (max-width: 767px) {
+  .menu-div {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    z-index: 100;
+    display: none; 
+  }
+
+  
+  .menu-div.flex {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  nav div.md\:flex {
+    display: flex !important; 
+    gap: 8px;
+  }
+}
+
+
+@media (max-width: 600px) and (min-width: 200px) {
+  nav div.md\:flex button {
+    width: 85px !important;
+    height: 32px !important;
+    font-size: 11px !important;
+    padding: 0 !important;
+  }
+}
+
+/* navbar */
+.main-nav{
+  width: 1920px;
+height: 65px;
+background-color: white;
+}
+
+.btn-munc, .btn-demo {
+  padding: 7px 21px;       
+  font-size: 1.125rem;    
+  font-weight: 600;      
+ 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+
+.btn-munc {
+  background-color: #3b82f6; 
+  color: white; 
+
+  margin-right: 10px;
+}
+
+.btn-munc:hover {
+  background-color: #1d4ed8; 
+}
+
+
+.btn-demo {
+  background-color: #ea580c; 
+  color: white;  margin-left:10px;
+  margin-right:15px;
+}
+
+.btn-demo:hover {
+  background-color: #c2410c; 
+}

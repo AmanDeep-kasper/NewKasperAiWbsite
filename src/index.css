@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+   /* stops vertical scroll */
+   height:100%;
+   font-family: Inter;
+
+  overflow-x: hidden;   /* optional: stops horizontal scroll */
+}
+body::-webkit-scrollbar {
+  display: none;
+}

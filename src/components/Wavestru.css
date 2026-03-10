@@ -1,0 +1,86 @@
+.wave-main-div{
+width: 1404px;
+height: 149px;
+display:flex;
+position:relative;
+justify-content:center;
+align-items:center;
+gap:60px;
+margin:100px auto;  
+
+  padding:60px 0;
+}
+.icon-div{
+background: rgba(237, 237, 237, 1);
+
+
+  transition: transform 3s ease;
+opacity: 1;
+width: 64px;
+height: 64px;
+top: 84px;
+opacity: 1;
+gap: 4.87px;
+border-radius: 38.32px;
+padding: 9.73px;
+}
+
+.icon-div img{
+    width: 45px;
+height: 45px;
+
+opacity: 1;
+
+}
+
+.wave-main-div:hover .icon-div{
+  animation: waveMove 1.5s ease-in-out infinite;
+}
+
+
+
+/* first wave - going UP */
+.wave-main-div div:nth-child(1){ transform: translateY(50px); }
+.wave-main-div div:nth-child(2){ transform: translateY(35px); }
+.wave-main-div div:nth-child(3){ transform: translateY(10px); }
+.wave-main-div div:nth-child(4){ transform: translateY(-30px); }
+
+/* second wave - going DOWN */
+.wave-main-div div:nth-child(5){ transform: translateY(-26px); }
+.wave-main-div div:nth-child(6){ transform: translateY(-1px); }
+.wave-main-div div:nth-child(7){ transform: translateY(50px); }
+.wave-main-div div:nth-child(8){ transform: translateY(80px); }
+
+/* third wave - going UP again */
+.wave-main-div div:nth-child(9){ transform: translateY(75px); }
+.wave-main-div div:nth-child(10){ transform: translateY(55px); }
+.wave-main-div div:nth-child(11){ transform: translateY(5px); }
+.wave-main-div div:nth-child(12){ transform: translateY(-40px); }
+
+
+
+
+@keyframes moveUp{
+0%{
+ transform: translateY(0);
+}
+50%{
+ transform: translateY(-25px);
+}
+100%{
+ transform: translateY(0);
+}
+}.wave-main-div:hover div:nth-child(1){ transform: translateY(-50px); }
+.wave-main-div:hover div:nth-child(2){ transform: translateY(-35px); }
+.wave-main-div:hover div:nth-child(3){ transform: translateY(-10px); }
+.wave-main-div:hover div:nth-child(4){ transform: translateY(30px); }
+
+.wave-main-div:hover div:nth-child(5){ transform: translateY(26px); }
+.wave-main-div:hover div:nth-child(6){ transform: translateY(1px); }
+.wave-main-div:hover div:nth-child(7){ transform: translateY(-50px); }
+.wave-main-div:hover div:nth-child(8){ transform: translateY(-80px); }
+
+.wave-main-div:hover div:nth-child(9){ transform: translateY(-75px); }
+.wave-main-div:hover div:nth-child(10){ transform: translateY(-55px); }
+.wave-main-div:hover div:nth-child(11){ transform: translateY(-5px); }
+.wave-main-div:hover div:nth-child(12){ transform: translateY(40px); }
