@@ -1,5 +1,9 @@
 import React from 'react'
 import "./AboutBanner.css"
+import banner2 from "../assets/images2/banner-2.png";
+import banner1 from "../assets/images2/banner1.svg";
+import white from "../assets/images2/white.png";
+import orange from "../assets/images2/orange.png";
 const AboutBanner = () => {
   return (
 <div classNameName="About-Banner-maindiv">
@@ -12,12 +16,12 @@ Empowering Modern Businesses.</p>
 <div className="relative w-[1150px] h-[500px] mx-auto mt-90">
   
   <div className="absolute -top-[16px] -right-[16px] w-[calc(100%+32px)] h-[calc(100%+32px)] z-0">
-    <img src="./orange.png" alt="" className="w-full h-full object-cover" />
+    <img src={orange} alt="" className="w-full h-full object-cover" />
   </div>
 
   <div className="relative w-[1150] h-[500px] z-10 bg-white shadow-md overflow-hidden flex items-center px-16">
     
-    <img src="./white.png" alt="" className="absolute inset-0 w-full h-full object-cover -z-10" />
+    <img src={white} alt="" className="absolute inset-0 w-full h-full object-cover -z-10" />
 
     <div className="flex w-full items-center justify-between">
       
@@ -37,13 +41,13 @@ Empowering Modern Businesses.</p>
     <div className="relative w-[500px] h-[1000px] flex justify-center items-center mx-auto">
   
   <img 
-    src="./banner1.svg" 
+    src={banner1} 
     alt="Kishor Kumar" 
     className="absolute z-10 h-[700px] w-auto object-contain drop-shadow-2xl"
   /> 
 
   <img 
-    src="./banner-2.png" 
+    src={banner2} 
     alt="Background Accent" 
     className="relative z-0 w-[454px] h-[495px] object-contain left-[5px] top-[0px] " 
   />

@@ -27,14 +27,14 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* 3. Mobile Menu Overlay/List */}
+     
      <ul className={`menu-div ${isOpen ? 'flex' : 'hidden'} md:flex items-center`}>
-  {/* Home */}
+
   <li>
     <Link to="/" className="menu transition font-sora">Home</Link>
   </li>
 
-  {/* Solutions - FIXED: Removed the nested <li> */}
+ 
 <li 
             className="group relative cursor-pointer transition"
             onClick={() => handleOpenPopup("solutions")}
@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
           </li>
 
-  {/* Services */}
+  
   <li 
             className="group relative cursor-pointer transition"
             onClick={() => handleOpenPopup("solutions")}
@@ -60,12 +60,12 @@ const Navbar = () => {
             </div>
           </li>
 
-  {/* About Us */}
+  
   <li>
     <Link to="/About" className="menu transition">About Us</Link>
   </li>
 
-  {/* Insights */}
+
   <li>
     <Link to="#" className="menu transition">Insights</Link>
   </li>
