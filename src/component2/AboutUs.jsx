@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <div>
 
-{/* code */}
+
         <AboutBanner/>
         <AboutText/>
         <Leaders/>
