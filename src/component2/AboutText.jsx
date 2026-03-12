@@ -1,8 +1,9 @@
 import React from 'react'
+import "./AboutText.css"
 
 const AboutText = () => {
   return (
-<div className="about-text w-[1071px] h-[430px] font-sora font-normal text-[32px] leading-[1.35] mt-[200px]  tracking-normal text-center mx-auto">
+<div className="about-text-div">
   Kasper Infotech is a digital solutions company with 7+ years of experience in delivering scalable software, web, and mobile applications.
   <br /><br />
   We specialize in custom software, ERP solutions, UI/UX design, and digital marketing, helping businesses streamline operations and grow faster.

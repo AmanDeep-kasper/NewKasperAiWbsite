@@ -84,3 +84,359 @@ opacity: 1;
 .wave-main-div:hover div:nth-child(10){ transform: translateY(-55px); }
 .wave-main-div:hover div:nth-child(11){ transform: translateY(-5px); }
 .wave-main-div:hover div:nth-child(12){ transform: translateY(40px); }
+
+
+
+
+
+
+/* ════════════════════════════════════════
+   WAVE RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ══ Base fix ══ */
+.wave-main-div {
+  width: 100% !important;
+  max-width: 1404px !important;
+  box-sizing: border-box !important;
+}
+
+/* ══ LARGE DESKTOP (1280px+) ══ */
+@media (min-width: 1280px) {
+  .wave-main-div {
+    height: 149px !important;
+    gap: 60px !important;
+    margin: 100px auto !important;
+    padding: 60px 0 !important;
+  }
+  .icon-div {
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 38px !important;
+    padding: 9px !important;
+  }
+  .icon-div img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
+/* ══ SMALL DESKTOP (1025px – 1279px) ══ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .wave-main-div {
+    height: 130px !important;
+    gap: 44px !important;
+    margin: 80px auto !important;
+    padding: 50px 20px !important;
+  }
+  .icon-div {
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 34px !important;
+    padding: 8px !important;
+  }
+  .icon-div img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  /* wave positions scaled */
+  .wave-main-div div:nth-child(1){ transform: translateY(44px) !important; }
+  .wave-main-div div:nth-child(2){ transform: translateY(30px) !important; }
+  .wave-main-div div:nth-child(3){ transform: translateY(8px) !important; }
+  .wave-main-div div:nth-child(4){ transform: translateY(-26px) !important; }
+  .wave-main-div div:nth-child(5){ transform: translateY(-22px) !important; }
+  .wave-main-div div:nth-child(6){ transform: translateY(-1px) !important; }
+  .wave-main-div div:nth-child(7){ transform: translateY(44px) !important; }
+  .wave-main-div div:nth-child(8){ transform: translateY(70px) !important; }
+  .wave-main-div div:nth-child(9){ transform: translateY(65px) !important; }
+  .wave-main-div div:nth-child(10){ transform: translateY(48px) !important; }
+  .wave-main-div div:nth-child(11){ transform: translateY(4px) !important; }
+  .wave-main-div div:nth-child(12){ transform: translateY(-35px) !important; }
+
+  .wave-main-div:hover div:nth-child(1){ transform: translateY(-44px) !important; }
+  .wave-main-div:hover div:nth-child(2){ transform: translateY(-30px) !important; }
+  .wave-main-div:hover div:nth-child(3){ transform: translateY(-8px) !important; }
+  .wave-main-div:hover div:nth-child(4){ transform: translateY(26px) !important; }
+  .wave-main-div:hover div:nth-child(5){ transform: translateY(22px) !important; }
+  .wave-main-div:hover div:nth-child(6){ transform: translateY(1px) !important; }
+  .wave-main-div:hover div:nth-child(7){ transform: translateY(-44px) !important; }
+  .wave-main-div:hover div:nth-child(8){ transform: translateY(-70px) !important; }
+  .wave-main-div:hover div:nth-child(9){ transform: translateY(-65px) !important; }
+  .wave-main-div:hover div:nth-child(10){ transform: translateY(-48px) !important; }
+  .wave-main-div:hover div:nth-child(11){ transform: translateY(-4px) !important; }
+  .wave-main-div:hover div:nth-child(12){ transform: translateY(35px) !important; }
+}
+
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wave-main-div {
+    height: 200px !important;
+    gap: 28px !important;
+    margin: 60px auto !important;
+    padding: 40px 16px !important;
+  }
+  .icon-div {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 28px !important;
+    padding: 7px !important;
+  }
+  .icon-div img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .wave-main-div div:nth-child(1){ transform: translateY(36px) !important; }
+  .wave-main-div div:nth-child(2){ transform: translateY(24px) !important; }
+  .wave-main-div div:nth-child(3){ transform: translateY(6px) !important; }
+  .wave-main-div div:nth-child(4){ transform: translateY(-20px) !important; }
+  .wave-main-div div:nth-child(5){ transform: translateY(-16px) !important; }
+  .wave-main-div div:nth-child(6){ transform: translateY(-1px) !important; }
+  .wave-main-div div:nth-child(7){ transform: translateY(36px) !important; }
+  .wave-main-div div:nth-child(8){ transform: translateY(56px) !important; }
+  .wave-main-div div:nth-child(9){ transform: translateY(52px) !important; }
+  .wave-main-div div:nth-child(10){ transform: translateY(38px) !important; }
+  .wave-main-div div:nth-child(11){ transform: translateY(3px) !important; }
+  .wave-main-div div:nth-child(12){ transform: translateY(-28px) !important; }
+
+  .wave-main-div:hover div:nth-child(1){ transform: translateY(-36px) !important; }
+  .wave-main-div:hover div:nth-child(2){ transform: translateY(-24px) !important; }
+  .wave-main-div:hover div:nth-child(3){ transform: translateY(-6px) !important; }
+  .wave-main-div:hover div:nth-child(4){ transform: translateY(20px) !important; }
+  .wave-main-div:hover div:nth-child(5){ transform: translateY(16px) !important; }
+  .wave-main-div:hover div:nth-child(6){ transform: translateY(1px) !important; }
+  .wave-main-div:hover div:nth-child(7){ transform: translateY(-36px) !important; }
+  .wave-main-div:hover div:nth-child(8){ transform: translateY(-56px) !important; }
+  .wave-main-div:hover div:nth-child(9){ transform: translateY(-52px) !important; }
+  .wave-main-div:hover div:nth-child(10){ transform: translateY(-38px) !important; }
+  .wave-main-div:hover div:nth-child(11){ transform: translateY(-3px) !important; }
+  .wave-main-div:hover div:nth-child(12){ transform: translateY(28px) !important; }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .wave-main-div {
+    height: 160px !important;
+    gap: 10px !important;
+    margin: 40px auto !important;
+    padding: 50px 12px !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    justify-content: center !important;
+  }
+  .icon-div {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 22px !important;
+    padding: 5px !important;
+    flex-shrink: 0 !important;
+  }
+  .icon-div img {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .wave-main-div div:nth-child(1){ transform: translateY(16px) !important; }
+  .wave-main-div div:nth-child(2){ transform: translateY(10px) !important; }
+  .wave-main-div div:nth-child(3){ transform: translateY(4px) !important; }
+  .wave-main-div div:nth-child(4){ transform: translateY(-8px) !important; }
+  .wave-main-div div:nth-child(5){ transform: translateY(-6px) !important; }
+  .wave-main-div div:nth-child(6){ transform: translateY(-1px) !important; }
+  .wave-main-div div:nth-child(7){ transform: translateY(16px) !important; }
+  .wave-main-div div:nth-child(8){ transform: translateY(22px) !important; }
+  .wave-main-div div:nth-child(9){ transform: translateY(20px) !important; }
+  .wave-main-div div:nth-child(10){ transform: translateY(14px) !important; }
+  .wave-main-div div:nth-child(11){ transform: translateY(2px) !important; }
+  .wave-main-div div:nth-child(12){ transform: translateY(-10px) !important; }
+
+  .wave-main-div:hover div:nth-child(1){ transform: translateY(-16px) !important; }
+  .wave-main-div:hover div:nth-child(2){ transform: translateY(-10px) !important; }
+  .wave-main-div:hover div:nth-child(3){ transform: translateY(-4px) !important; }
+  .wave-main-div:hover div:nth-child(4){ transform: translateY(8px) !important; }
+  .wave-main-div:hover div:nth-child(5){ transform: translateY(6px) !important; }
+  .wave-main-div:hover div:nth-child(6){ transform: translateY(1px) !important; }
+  .wave-main-div:hover div:nth-child(7){ transform: translateY(-16px) !important; }
+  .wave-main-div:hover div:nth-child(8){ transform: translateY(-22px) !important; }
+  .wave-main-div:hover div:nth-child(9){ transform: translateY(-20px) !important; }
+  .wave-main-div:hover div:nth-child(10){ transform: translateY(-14px) !important; }
+  .wave-main-div:hover div:nth-child(11){ transform: translateY(-2px) !important; }
+  .wave-main-div:hover div:nth-child(12){ transform: translateY(10px) !important; }
+}
+/* ══ TABLET (768px – 1024px) ══ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wave-main-div {
+    height: auto !important;
+    min-height: 180px !important;
+    gap: 16px !important;
+    margin: 60px auto !important;
+    padding: 50px 20px !important;
+    overflow: visible !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .icon-div {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 26px !important;
+    padding: 6px !important;
+    flex-shrink: 0 !important;
+  }
+  .icon-div img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  /* reset all wave transforms on tablet - flex-wrap handles layout */
+  .wave-main-div div:nth-child(1){ transform: translateY(20px) !important; }
+  .wave-main-div div:nth-child(2){ transform: translateY(14px) !important; }
+  .wave-main-div div:nth-child(3){ transform: translateY(4px) !important; }
+  .wave-main-div div:nth-child(4){ transform: translateY(-12px) !important; }
+  .wave-main-div div:nth-child(5){ transform: translateY(-10px) !important; }
+  .wave-main-div div:nth-child(6){ transform: translateY(-1px) !important; }
+  .wave-main-div div:nth-child(7){ transform: translateY(20px) !important; }
+  .wave-main-div div:nth-child(8){ transform: translateY(30px) !important; }
+  .wave-main-div div:nth-child(9){ transform: translateY(26px) !important; }
+  .wave-main-div div:nth-child(10){ transform: translateY(18px) !important; }
+  .wave-main-div div:nth-child(11){ transform: translateY(2px) !important; }
+  .wave-main-div div:nth-child(12){ transform: translateY(-14px) !important; }
+
+  .wave-main-div:hover div:nth-child(1){ transform: translateY(-20px) !important; }
+  .wave-main-div:hover div:nth-child(2){ transform: translateY(-14px) !important; }
+  .wave-main-div:hover div:nth-child(3){ transform: translateY(-4px) !important; }
+  .wave-main-div:hover div:nth-child(4){ transform: translateY(12px) !important; }
+  .wave-main-div:hover div:nth-child(5){ transform: translateY(10px) !important; }
+  .wave-main-div:hover div:nth-child(6){ transform: translateY(1px) !important; }
+  .wave-main-div:hover div:nth-child(7){ transform: translateY(-20px) !important; }
+  .wave-main-div:hover div:nth-child(8){ transform: translateY(-30px) !important; }
+  .wave-main-div:hover div:nth-child(9){ transform: translateY(-26px) !important; }
+  .wave-main-div:hover div:nth-child(10){ transform: translateY(-18px) !important; }
+  .wave-main-div:hover div:nth-child(11){ transform: translateY(-2px) !important; }
+  .wave-main-div:hover div:nth-child(12){ transform: translateY(14px) !important; }
+}
+
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .wave-main-div {
+    height: auto !important;
+    min-height: 160px !important;
+    gap: 12px !important;
+    margin: 32px auto !important;
+    padding: 20px 12px !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .icon-div {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 22px !important;
+    padding: 5px !important;
+    flex-shrink: 0 !important;
+    /* no translateY on wrapped icons */
+    transform: translateY(0) !important;
+  }
+  .icon-div img {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  /* remove all wave movement on mobile - icons wrap into grid */
+  .wave-main-div div:nth-child(1)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(2)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(3)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(4)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(5)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(6)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(7)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(8)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(9)  { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(10) { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(11) { transform: translateY(0) !important; }
+  .wave-main-div div:nth-child(12) { transform: translateY(0) !important; }
+
+  .wave-main-div:hover div:nth-child(1)  { transform: translateY(-8px) !important; }
+  .wave-main-div:hover div:nth-child(2)  { transform: translateY(-6px) !important; }
+  .wave-main-div:hover div:nth-child(3)  { transform: translateY(-3px) !important; }
+  .wave-main-div:hover div:nth-child(4)  { transform: translateY(4px) !important; }
+  .wave-main-div:hover div:nth-child(5)  { transform: translateY(3px) !important; }
+  .wave-main-div:hover div:nth-child(6)  { transform: translateY(-1px) !important; }
+  .wave-main-div:hover div:nth-child(7)  { transform: translateY(-8px) !important; }
+  .wave-main-div:hover div:nth-child(8)  { transform: translateY(-10px) !important; }
+  .wave-main-div:hover div:nth-child(9)  { transform: translateY(-9px) !important; }
+  .wave-main-div:hover div:nth-child(10) { transform: translateY(-6px) !important; }
+  .wave-main-div:hover div:nth-child(11) { transform: translateY(-2px) !important; }
+  .wave-main-div:hover div:nth-child(12) { transform: translateY(5px) !important; }
+}
+
+
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .wave-main-div {
+    gap: 10px !important;
+    min-height: 150px !important;
+    padding: 16px 10px !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    justify-content: center !important;
+  }
+  .icon-div {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 20px !important;
+    padding: 5px !important;
+  }
+  .icon-div img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .wave-main-div {
+    gap: 8px !important;
+    min-height: 140px !important;
+    padding: 14px 8px !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    justify-content: center !important;
+  }
+  .icon-div {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 18px !important;
+    padding: 4px !important;
+  }
+  .icon-div img {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+ 
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .wave-main-div {
+    gap: 7px !important;
+    min-height: 130px !important;
+    padding: 12px 6px !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    justify-content: center !important;
+  }
+  .icon-div {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 16px !important;
+    padding: 3px !important;
+  }
+  .icon-div img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

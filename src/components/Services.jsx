@@ -57,12 +57,12 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-white text-center relative overflow-visible">
+    <section className="py-20 bg-white text-center relative overflow-visible service-section">
       <h2 className="text-3xl font-bold text-[#002D2D] mb-40 services-we-offer">Services We Offer</h2>
       
-      <div className="services-line lg:block hidden"></div>
+      <div className="services-line"></div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+      <div className="service-grid-conatiner">
         
          <Build service={services[0]} />
 

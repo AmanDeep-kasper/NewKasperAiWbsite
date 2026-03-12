@@ -1,9 +1,22 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import "./background-beams-with-collision-demo.css";
+import { useState } from "react";
 import google from "../assets/images2/google.png";
 import Badgeimg from "../assets/images2/Badgeimg.jpg"
+import Contactspopup from "@/Contactspopup/Contactspopup";
 export default function BackgroundBeamsWithCollisionDemo() {
+   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
+    const [isPopupOpen, setIsPopupOpen] = useState(false); // Popup Visibility
+    const [activeTab, setActiveTab] = useState(""); // Track if "Solutions" or "Services" was clicked
+  
+   
+    const handleOpenPopup = (type) => {
+      setActiveTab(type);
+      setIsPopupOpen(true);
+      setIsOpen(false); 
+    };
+
   const openGoogleReviews = () => {
   window.open(
     "https://maps.app.goo.gl/Fctod6ZHUeGgWGyp6",
@@ -11,43 +24,44 @@ export default function BackgroundBeamsWithCollisionDemo() {
   );
 };
   return (
+    <>
     <BackgroundBeamsWithCollision>
   
 {/* Parent Container to hold both Text and Image side-by-side */}
 {/* Parent: flex-row with items-start to keep text at top */}
-<div className="flex flex-row items-start justify-between w-full max-w-[1922px] mx-auto  px-8 lg:px-50 pt-2 overflow-visible">
+<div className="flex flex-row md:flex-row flex-col items-start justify-between w-full max-w-[1922px] mx-auto px-4 md:px-8 lg:px-20 pt-2 overflow-visible">
   
   {/* LEFT SIDE: Text Content */}
   {/* Changed w-full to w-fit so it only takes the space it needs for the single line */}
-  <div className="Badge-container flex flex-col items-start text-left w-fit z-5 mt-30">
+  <div className="Badge-container">
     
     {/* Badge Section */}
-    <div className="badge-wrapper flex items-center bg-white shadow-sm border border-gray-100 rounded-sm w-fit overflow-hidden mb-2">
-      <span className="bg-[#7DFFA0] text-black px-4 py-2 font-bold text-sm ml-1 my-1 badge-yrs">
+    <div className="badge-wrapper">
+      <span className="badge-yrs">
         9+ Years
       </span>
-      <span className="ml-2 py-1 text-gray-700 text-sm font-medium flex items-center gap-1">
+      <span className="expertise-text">
         of expertise in delivering digital solutions
-        <img src="./k.png" alt="crown" className="mr-1 h-9 w-9 object-contain" />
+        <img src="./k.png" alt="crown" className="expertise-icon" />
       </span>
     </div>
 
     {/* Heading - whitespace-nowrap keeps it in one line */}
-    <h1 className="Badge-title text-5xl font-bold text-[#002D2D] leading-tight mb-4 whitespace-nowrap">
+    <h1 className="Badge-title">
       Crafting Powerful Digital Experiences
     </h1>
 
     {/* Subtext */}
-    <p className="Badge-subtitle text-slate-700 mb-10 text-lg max-w-4xl justify-start">
+    <p className="Badge-subtitle">
       Modern web & software designing, development, and digital marketing for growing businesses.
     </p>
 
     {/* Actions */}
-    <div className="Badge-actions flex flex-wrap items-center gap-4">
-      <button className="btn-outline border-2 border-[#002D2D] text-[#002D2D]  font-semibold hover:bg-[#002D2D] hover:text-white transition Badge-Buttons">
+    <div className="Badge-actions">
+      <button className="btn-outline Badge-buttons">
         Our Products
       </button>
-      <button className="btn-primary bg-[#FF5733] text-white  font-semibold px-2 hover:bg-[#E64A19] transition Badge-Buttons">
+      <button className="btn-primary Badge-buttons" onClick={() => handleOpenPopup("contact")}>
         Contact Us
       </button>
       
@@ -63,18 +77,23 @@ export default function BackgroundBeamsWithCollisionDemo() {
 
   {/* RIGHT SIDE: Diamond Shape Image */}
   {/* We keep this relative to handle the absolute positioning of the large diamond */}
-  <div className="relative flex-1 ml-20 lg:ml-30 mt-5">
-    <div className="w-[1200px] h-[600px]">
+  <div className="badge-image-container">
+    <div className=" image-wrapper">
         <img 
             src={Badgeimg}
             alt="Dashboard" 
            
-            className="w-full h-auto drop-shadow-2xl object-cover diamond-half-clip z-0 rounded-3xl" 
+            className=" diamond-half-clip z-0 rounded-3xl" 
         />
     </div>
 </div>
 </div>
-    
+
     </BackgroundBeamsWithCollision>
+    <Contactspopup isOpen={isPopupOpen} 
+        onClose={() => setIsPopupOpen(false)} 
+        type={activeTab}/>
+        </>
+    
   );
 }
