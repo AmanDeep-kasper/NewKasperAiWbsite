@@ -10,10 +10,12 @@ const __dirname = path.dirname(__filename)
 
 export default defineConfig({
   plugins: [react(),tailwindcss()],
+  server:{host:true,port:5173},
   resolve: {
     alias: {
       // This tells Vite that "@" means the "src" folder
       "@": path.resolve(__dirname, "./src"),
     },
+   
   },
 })

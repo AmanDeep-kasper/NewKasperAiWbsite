@@ -80,35 +80,37 @@
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   
   nav div.md\:flex {
     display: flex !important; 
     gap: 8px;
   }
-}
+} */
 
-
+/* 
 @media (max-width: 600px) and (min-width: 200px) {
   nav div.md\:flex button {
     width: 85px !important;
     height: 32px !important;
     font-size: 11px !important;
     padding: 0 !important;
-  }
+  } */
+/* } */
+.nav-logo{
+  margin-top:-31px;
 }
-
 /* navbar */
 .main-nav{
   width: 1920px;
-height: 65px;
+height: 70px;
 background-color: white;
 }
 
 .btn-munc, .btn-demo {
-  padding: 7px 21px;       
-  font-size: 1.125rem;    
-  font-weight: 600;      
+  padding: 5px 15px;       
+  font-size: 1.1rem;    
+  font-weight: 400;      
  
   border: none;
   cursor: pointer;
@@ -136,4 +138,267 @@ background-color: white;
 
 .btn-demo:hover {
   background-color: #c2410c; 
+}
+
+/* Responsive */
+/* ════════════════════════════════════════
+   RESPONSIVE — append at bottom of Navbar.css
+   ════════════════════════════════════════ */
+/* ════════════════════════════════════════
+   FULLY RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ── Base fix ── */
+.main-nav {
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+/* ══════════════════════════════
+   LARGE DESKTOP (1280px+)
+   ══════════════════════════════ */
+@media (min-width: 1280px) {
+  .main-nav {
+    height: 70px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+  .nav-logo {
+    height: 70px !important;
+    margin-top: -31px !important;
+  }
+  .btn-munc, .btn-demo {
+    padding: 5px 15px !important;
+    font-size: 1.1rem !important;
+  }
+  .menu {
+    font-size: 17px !important;
+  }
+  .menu-div {
+    gap: 30px !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL DESKTOP / LAPTOP (1025px – 1279px)
+   ══════════════════════════════ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .main-nav {
+    height: 68px !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+  .nav-logo {
+    height: 60px !important;
+    margin-top: -22px !important;
+  }
+  .btn-munc, .btn-demo {
+    padding: 5px 13px !important;
+    font-size: 1rem !important;
+  }
+  .menu {
+    font-size: 15px !important;
+    width: auto !important;
+  }
+  .menu-div {
+    gap: 22px !important;
+  }
+}
+
+/* ══════════════════════════════
+   TABLET LANDSCAPE (1024px)
+   ══════════════════════════════ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-nav {
+    height: 62px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .nav-logo {
+    height: 48px !important;
+    margin-top: -12px !important;
+  }
+  .btn-munc, .btn-demo {
+    padding: 5px 10px !important;
+    font-size: 0.85rem !important;
+    margin: 0 4px !important;
+  }
+  .menu {
+    font-size: 13px !important;
+    width: auto !important;
+  }
+  .menu-div {
+    gap: 12px !important;
+  }
+  /* hide buttons inside hamburger on tablet — desktop buttons are visible */
+  .mobile-menu-buttons {
+    display: none !important;
+  }
+}
+.mobile-menu-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-menu-buttons .btn-munc,
+.mobile-menu-buttons .btn-demo {
+  width: 169px;        /* same width for both */
+  height: 42px;        /* same height for both */
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ══════════════════════════════
+   MOBILE (max 767px)
+   ══════════════════════════════ */
+@media (max-width: 767px) {
+  .main-nav {
+    height: 58px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .nav-logo {
+    height: 38px !important;
+    margin-top: 0 !important;
+  }
+
+  /* dropdown position matches nav height */
+  .menu-div {
+    top: 58px !important;
+    padding: 12px 0 !important;
+  }
+
+  .menu-div.flex {
+    display: flex !important;
+  }
+
+  /* each nav item full width with separator */
+  .menu-div li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .menu-div li:last-child {
+    border-bottom: none;
+  }
+
+  .menu {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 15px !important;
+    justify-content: center !important;
+    padding: 4px 0 !important;
+  }
+
+  
+
+  /* show buttons inside hamburger */
+  .mobile-menu-buttons {
+    display: flex !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 14px 20px 8px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    margin-top: 4px !important;
+    box-sizing: border-box !important;
+    border-bottom: none !important;
+  }
+
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    flex: 1 !important;
+    padding: 8px 0 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL PHONES (max 480px)
+   ══════════════════════════════ */
+@media (max-width: 480px) {
+  .main-nav {
+    height: 54px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .nav-logo {
+    height: 34px !important;
+    margin-top: 0 !important;
+  }
+  .menu-div {
+    top: 54px !important;
+  }
+  .menu {
+    font-size: 14px !important;
+  }
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    font-size: 12px !important;
+  
+  }
+}
+
+/* ══════════════════════════════
+   EXTRA SMALL PHONES (max 360px)
+   ══════════════════════════════ */
+@media (max-width: 360px) {
+  .main-nav {
+    height: 50px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .nav-logo {
+    height: 30px !important;
+    margin-top: 0 !important;
+  }
+  .menu-div {
+    top: 50px !important;
+  }
+  .menu {
+    font-size: 13px !important;
+  }
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    font-size: 11px !important;
+    padding: 8px 0 !important;
+  }
+}
+/* default hidden on desktop */
+.mobile-menu-buttons {
+  display: none !important;
+}
+
+/* show only on mobile inside hamburger */
+@media (max-width: 767px) {
+  .mobile-menu-buttons {
+    display: flex !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 14px 20px 8px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    margin-top: 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-menu-buttons .btn-munc,
+  .mobile-menu-buttons .btn-demo {
+    flex: 1 !important;
+    padding: 8px 0 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+  }
 }

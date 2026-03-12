@@ -43,7 +43,7 @@ text-align: center;
     padding-left: 40px !important;
   }
 }
-.badge-yrs{
+.Badge-yrs{
 
   background-color: #7DFFA0; /* bg-[#7DFFA0] */
   color: #000000;            /* text-black */
@@ -100,7 +100,7 @@ letter-spacing: 0%;
 text-align: center;
 
   }
-  .badge-wrapper {
+  .Badge-wrapper {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -157,4 +157,581 @@ padding-bottom: 12px;
 padding-left: 16px;
 
 
+}
+
+.Badge-container{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: fit-content;
+  z-index: 5;
+  margin-top: 120px; 
+  margin-left:150px;
+
+}
+.badge-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: fit-content;
+  overflow: hidden;
+  margin-bottom: 8px; 
+  
+ 
+  border: 1px solid #f3f4f6; 
+  border-radius: 0.125rem;   
+  
+  /* Shadow-sm */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.badge-yrs {
+  background-color: #7DFFA0; 
+  color: #000000;
+  font-weight: 700;          
+  font-size: 0.875rem;      
+  
+  padding: 8px 16px;         
+  margin-left: 4px;         
+  margin-top: 4px;          
+  margin-bottom: 4px;       
+  
+  /* Layout */
+  display: inline-block;    
+}
+/* The Parent Span */
+.expertise-text {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 4px;
+  margin-left: 8px;   
+  padding-top: 6px;       
+  padding-bottom: 4px;    
+  color: #374151;         
+  font-size: 0.875rem;    
+  font-weight: 400;      
+}
+
+/* The Image inside */
+.expertise-icon {
+  margin-right: 4px;      
+  height: 36px;           
+  width: 36px;            
+  object-fit: contain;    
+}
+/* Title Styling */
+.Badge-title {
+  font-size: 3rem;           
+  font-weight: 600;          
+  color: #002d2d;            
+  line-height: 1.25;         
+  margin-bottom: 16px;       
+  white-space: nowrap;      
+}
+
+/* Subtitle Styling */
+.Badge-subtitle {
+  color: #334155;           
+  font-size: 1.125rem;       
+  line-height: 1.75rem;     
+  margin-bottom: 40px;      
+  max-width: 56rem;          
+  text-align: left;         
+}
+
+.Badge-actions {
+  display: flex;         
+  flex-wrap: wrap;       
+  align-items: center;  
+  gap: 16px;            
+}
+
+
+.Badge-buttons {
+  font-weight: 600;        
+  padding: 8px 15px;     
+  white-space: nowrap;   
+  cursor: pointer;
+  transition: all 0.3s ease;  
+    box-sizing: border-box; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn-outline {
+  border: 2px solid #002D2D;  
+  color: #002D2D;            
+  background-color: transparent;
+       padding:8px 25px;
+      min-width: 140px;
+
+}
+
+.btn-outline:hover {
+  background-color: #002D2D; 
+  color: #ffffff;            
+}
+
+/* Primary Button Variation */
+.btn-primary {
+  background-color: #FF5733;  
+  color: #ffffff;             
+  border: 2px solid #FF5733;  
+  padding: 8px 16px;
+      
+               
+}
+
+.btn-primary:hover {
+  background-color: #E64A19;  
+  border-color: #E64A19;
+}
+
+/* Container with Responsive Margins */
+.badge-image-container {
+  position: relative;     
+  flex: 1 1 0%;          
+  margin-top: 20px;      
+  margin-left: 80px;      
+}
+
+
+@media (min-width: 1024px) {
+  .badge-image-container {
+    margin-left: 120px;  
+  }
+}
+
+/* Sized wrapper */
+.image-wrapper {
+  width: 1200px;       
+  height: 600px;   
+       
+}
+
+
+.dashboard-img {
+  width: 100%;            
+  height: auto;           
+  object-fit: cover;     
+  z-index: 0;             
+  border-radius: 26px;    
+  
+ 
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+  
+  /* diamond-half-clip (Example Clip Path) */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%); 
+}
+
+
+
+
+
+/* ════════════════════════════════════════
+   RESPONSIVE — All Screen Sizes
+   ════════════════════════════════════════ */
+
+/* ══════════════════════════════
+   LARGE DESKTOP (1280px+)
+   ══════════════════════════════ */
+@media (min-width: 1280px) {
+  .Badge-container {
+    margin-left: 150px !important;
+    margin-top: 120px !important;
+  }
+  .Badge-title {
+    font-size: 3rem !important;
+  }
+  .image-wrapper {
+    width: 1200px !important;
+    height: 600px !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL DESKTOP / LAPTOP (1025px – 1279px)
+   ══════════════════════════════ */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .Badge-container {
+    margin-left: 60px !important;
+    margin-top: 80px !important;
+  }
+  .Badge-title {
+    font-size: 2.4rem !important;
+    white-space: normal !important;
+  }
+  .Badge-subtitle {
+    font-size: 1rem !important;
+  }
+  .image-wrapper {
+    width: 550px !important;
+    height: auto !important;
+  }
+  .badge-image-container {
+    margin-left: 40px !important;
+  }
+}
+
+
+/* ══════════════════════════════
+   MOBILE (max 767px)
+/* ══ Mobile: stack vertically ══ */
+@media (max-width: 767px) {
+  .flex.flex-col {
+    flex-direction: column !important;
+  }
+
+  .Badge-container {
+    margin-left: 0 !important;
+    margin-top: 40px !important;
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .Badge-title {
+    font-size: 1.8rem !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .Badge-subtitle {
+    text-align: center !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  
+
+  .badge-image-container {
+    margin-left: 0 !important;
+    margin-top: 24px !important;
+    width: 100% !important;
+  }
+
+  .image-wrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .diamond-half-clip {
+    transform: none !important;
+    clip-path: none !important;
+    width: 100% !important;
+    border-radius: 16px !important;
+  }
+}
+
+/* ══════════════════════════════
+   SMALL PHONES (max 480px)
+   ══════════════════════════════ */
+@media (max-width: 480px) {
+  .Badge-title {
+    font-size: 1.5rem !important;
+  }
+  .Badge-subtitle {
+    font-size: 0.88rem !important;
+  }
+  .badge-yrs {
+    font-size: 0.75rem !important;
+    padding: 6px 10px !important;
+  }
+  .expertise-text {
+    font-size: 0.72rem !important;
+  }
+  .expertise-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* ══════════════════════════════
+   EXTRA SMALL PHONES (max 360px)
+   ══════════════════════════════ */
+@media (max-width: 360px) {
+  .Badge-title {
+    font-size: 1.3rem !important;
+  }
+  .Badge-subtitle {
+    font-size: 0.82rem !important;
+  }
+  .btn-outline,
+  .btn-primary {
+    font-size: 12px !important;
+    padding: 6px 9px !important;
+  }
+}
+
+
+
+/* ══ Fix badge-wrapper stuck on navbar ══ */
+@media (max-width: 767px) {
+  .Badge-container {
+    margin-top: 20px !important;
+    padding-top: 16px !important;
+    height:auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .badge-wrapper {
+    width: auto !important;
+    max-width: 95vw !important;
+    overflow: visible !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-bottom: 12px !important;
+    margin-top: 180px !important;
+  }
+
+  .badge-yrs {
+    margin: 0 !important;
+    font-size: 0.75rem !important;
+    padding: 6px 10px !important;
+  }
+
+  .expertise-text {
+    font-size: 0.7rem !important;
+    margin-left: 4px !important;
+    flex-wrap: wrap !important;
+    max-width: 90vw !important;
+    text-align: center !important;
+    padding: 6px 6px !important;
+    line-height: 1.4 !important;
+  }
+
+  .expertise-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .Badge-container {
+    margin-top: 16px !important;
+    padding-top: 12px !important;
+  }
+
+  .badge-wrapper {
+    max-width: 98vw !important;
+  }
+
+  .expertise-text {
+    font-size: 0.65rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .Badge-container {
+    margin-top: 10px !important;
+    padding-top: 8px !important;
+  }
+
+  .expertise-text {
+    font-size: 0.6rem !important;
+    padding: 4px !important;
+  }
+}
+
+/* ══════════════════════════════
+   TABLET (768px – 1024px) — CLEAN SINGLE BLOCK
+   ══════════════════════════════ */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .Badge-container {
+    margin-left: 24px !important;
+    margin-top: 60px !important;
+    width: auto !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .badge-wrapper {
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    margin-top: 0 !important;
+    width: auto !important;
+  }
+
+  .badge-yrs {
+    font-size: 0.8rem !important;
+    padding: 6px 12px !important;
+    margin: 2px !important;
+  }
+
+  .expertise-text {
+    font-size: 0.78rem !important;
+    flex-wrap: wrap !important;
+    margin-left: 4px !important;
+    padding: 4px 6px !important;
+  }
+
+  .expertise-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .Badge-title {
+    font-size: 2rem !important;
+    white-space: normal !important;
+    margin-bottom: 12px !important;
+    margin-right:1rem;
+    margin-left:0rem;
+   text-align: left;
+    width:600px;
+  }
+
+  .Badge-subtitle {
+    font-size: 0.92rem !important;
+    margin-bottom: 20px !important;
+  
+       width:500px;
+  }
+
+  .Badge-actions {
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    padding: 7px 14px !important;
+    font-size: 13px !important;
+    min-width: unset !important;
+  }
+
+  .google-reviews {
+    font-size: 12px !important;
+    padding: 7px 14px !important;
+  }
+
+  .badge-image-container {
+    margin-left: 10px !important;
+    margin-top: 60px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .image-wrapper {
+    width: 700px !important;
+    height: auto !important;
+    margin-right:100rem;
+    margin-left:-5rem;
+  }
+
+  .diamond-half-clip {
+    width: 100% !important;
+    transform: rotate(-10deg) !important;
+  }
+}
+/* ══ MOBILE (max 767px) ══ */
+@media (max-width: 767px) {
+  .Badge-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    width: auto !important;
+    min-width: unset !important;
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+    justify-content: center !important;
+  }
+
+  .google-reviews {
+    width: auto !important;
+    justify-content: center !important;
+    font-size: 13px !important;
+    padding: 8px 16px !important;
+  }
+}
+
+/* ══ iPHONE 14 (390px – 430px) ══ */
+@media (max-width: 430px) and (min-width: 390px) {
+  .Badge-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    gap: 10px !important;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    width: auto !important;
+    min-width: unset !important;
+    box-sizing: border-box !important;
+    padding: 8px 14px !important;
+    font-size: 12px !important;
+  }
+
+  .google-reviews {
+    width: auto !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    padding: 8px 14px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* ══ SMALL PHONES (max 389px) ══ */
+@media (max-width: 389px) {
+  .Badge-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    width: auto !important;
+    min-width: unset !important;
+    padding: 7px 12px !important;
+    font-size: 11px !important;
+  }
+
+  .google-reviews {
+    width: auto !important;
+    padding: 7px 12px !important;
+    font-size: 11px !important;
+  }
+}
+
+/* ══ EXTRA SMALL (max 360px) ══ */
+@media (max-width: 360px) {
+  .Badge-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 6px !important;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    width: auto !important;
+    min-width: unset !important;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+  }
+
+  .google-reviews {
+    width: auto !important;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+  }
 }

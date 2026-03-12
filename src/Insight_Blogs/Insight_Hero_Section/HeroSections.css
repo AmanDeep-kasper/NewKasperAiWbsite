@@ -1,0 +1,169 @@
+.hero-section{
+width:100%;
+background:#00063D;
+
+padding-bottom:80px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* TOP CONTENT */
+
+.hero-top{
+width:100%;
+
+margin:0 auto;
+text-align:center;
+display:flex;
+flex-direction:column;
+
+}
+
+/* HEADING */
+
+.hero-heading{
+font-family:"Sora", sans-serif;
+font-weight:600;
+font-size:48px;
+line-height:135%;
+color:rgba(27,18,112,1);
+padding-top: 75px;
+
+
+}
+
+/* PARAGRAPH */
+
+.hero-paragraph{
+font-family:"Sora", sans-serif;
+font-size:16px;
+color:rgba(0,6,61,1);
+opacity:0.9;
+font-weight:400;
+line-height:120%;
+margin-top: -10px;
+padding-top: 20px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+padding-top: 20px;
+}
+
+.hero-buttons button{
+padding:6px 14px;
+border:1px solid rgba(0,6,61,0.2);
+background:transparent;
+color:rgba(0,6,61,1);
+border-radius:8px;
+cursor:pointer;
+font-family:"Sora", sans-serif;
+font-size:14px;
+}
+
+/* FEATURED BLOG */
+
+.featured-blog{
+margin-top:110px;
+width:100%;
+max-width:1429px;
+margin-left:auto;
+margin-right:auto;
+display:flex;
+gap:13px;
+align-items:center;
+justify-content:center;
+}
+
+/* IMAGE */
+
+.featured-image img{
+width:617px;
+height:360px;
+object-fit:cover;
+border-radius:18px;
+}
+
+/* CARD */
+
+.featured-card{
+width:482px;
+height:360px;
+background:white;
+padding:16px;
+border-radius:6px;
+display:flex;
+flex-direction:column;
+gap:1px;
+}
+
+/* TAG */
+
+.blog-tag{
+background:#e6f7ff;
+color:#006e87;
+padding:4px 10px;
+font-size:13px;
+width: 35px;
+
+}
+
+/* TITLE */
+
+.featured-title{
+font-family:"Sora", sans-serif;
+font-size:22px;
+font-weight:500;
+color:#00063D;
+}
+
+/* TEXT */
+
+.featured-text{
+font-family:"Sora", sans-serif;
+font-size:14px;
+color:#666;
+}
+
+/* DATE */
+
+.blog-date{
+font-size:13px;
+font-family:"Sora", sans-serif;
+color:#00063D;
+}
+
+.blog-date span{
+color:#888;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1200px){
+
+.featured-blog{
+flex-direction:column;
+width:90%;
+}
+
+.featured-image img{
+width:100%;
+height:auto;
+}
+
+.featured-card{
+width:100%;
+height:auto;
+}
+
+.hero-top{
+width:90%;
+}
+
+}

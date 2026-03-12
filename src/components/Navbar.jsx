@@ -2,6 +2,9 @@ import React,{useState} from 'react'
 import { Link } from 'react-router-dom' 
 import Solutionspopup from '../Soutionpopup/Solutionspopup.jsx';
 import "./Navbar.css";
+import logo from "../assets/images2/logo.jpg.png"
+import Servicespopup from '@/Servicespopup/Servicespopup.jsx';
+import navtag from "../assets/images2/navtag.svg"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
   const [isPopupOpen, setIsPopupOpen] = useState(false); // Popup Visibility
@@ -20,9 +23,9 @@ const Navbar = () => {
       <div className="flex items-center shrink-0">
         <Link to="/">
           <img 
-            src="./logo.jpg.png" 
+            src={logo}
             alt="Kasper Logo" 
-            className="h-8 md:h-10 lg:h-12 w-auto object-contain transition-all duration-300"
+            className="h-8 md:h-10  lg:h-20 w-auto object-contain transition-all duration-300 nav-logo"
           />
         </Link>
       </div>
@@ -37,7 +40,7 @@ const Navbar = () => {
  
 <li 
             className="group relative cursor-pointer transition"
-            onClick={() => handleOpenPopup("solutions")}
+            onMouseEnter={() => handleOpenPopup("solutions")}
           >
             <div className="menu flex items-center justify-center">
               <span className="transition font-sora">Solutions</span>
@@ -50,7 +53,7 @@ const Navbar = () => {
   
   <li 
             className="group relative cursor-pointer transition"
-            onClick={() => handleOpenPopup("solutions")}
+            onMouseEnter={() => handleOpenPopup("services")}
           >
             <div className="menu flex items-center justify-center">
               <span className="transition font-sora">Services</span>
@@ -67,16 +70,37 @@ const Navbar = () => {
 
 
   <li>
-    <Link to="#" className="menu transition">Insights</Link>
+    <Link to="/insightsblogs" className="menu transition">Insights</Link>
   </li>
+
+
+<li className="mobile-menu-buttons">
+  <div className="relative inline-block">
+    <img 
+      src={navtag} 
+      alt="try" 
+      className="absolute -top-3 -left-4 h-8 w-auto z-10"
+    />
+    <button className="btn-munc w-28 h-10">MUN-C</button>
+  </div>
+  <button className="btn-demo w-28 h-10">Get A Demo</button>
+</li>
+
 </ul>
 
       <div className="flex items-center space-x-2 md:space-x-4">
         {/* Buttons (Keep existing structure) */}
-        <div className="md:flex items-center space-x-4">
-          <button className="btn-munc">MUN-C</button>
-          <button className=" btn-demo">Get A Demo</button>
-        </div>
+      <div className="hidden md:flex items-center space-x-4">
+  <div className="relative inline-block">
+    <img 
+      src={navtag} 
+      alt="try" 
+      className="absolute -top-3 -left-4 h-8 w-auto z-10"
+    />
+    <button className="btn-munc">MUN-C</button>
+  </div>
+  <button className="btn-demo">Get A Demo</button>
+</div>
 
         {/* 4. Hamburger Icon Button (Visible only on mobile) */}
         <button 
@@ -93,11 +117,19 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
-    <Solutionspopup 
-        isOpen={isPopupOpen} 
-        onClose={() => setIsPopupOpen(false)} 
-        type={activeTab}
-      />
+   {isPopupOpen && activeTab === "solutions" && (
+  <Solutionspopup 
+    isOpen={true} 
+    onClose={() => setIsPopupOpen(false)} 
+  />
+)}
+
+{isPopupOpen && activeTab === "services" && (
+  <Servicespopup  
+    isOpen={true} 
+    onClose={() => setIsPopupOpen(false)} 
+  />
+)}
       </>
   )
 }
