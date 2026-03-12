@@ -10,7 +10,7 @@ const AboutText = () => {
   <br /><br />
   We build secure, modern, and future-ready systems that turn ideas into measurable results.
  </div>
-// code */}
+
   )
 }
 
